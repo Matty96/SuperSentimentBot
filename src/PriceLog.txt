@@ -5,4 +5,6 @@ BTC: {'EUR': 36789.39, 'GBP': 30939.05, 'USD': 38716.04, 'CNY': 269599.91}
 
 38719.56000000
 
-BTC prices on Coinbase: 38915.50
+BTC prices on Coinbase: 38915.50BTC prices on Coindesk: 
+Bitcoin: EUR: 36,591.8188, GBP: 30,695.5555, USD: 38,413.1394, BTC prices on Coindesk: 
+Bitcoin: EUR: 36,560.5215, GBP: 30,669.3014, USD: 38,380.2843, 
