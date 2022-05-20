@@ -1,5 +1,6 @@
 import requests
-
+import pickledb
+from datetime import datetime
 
 class Binance:
     
@@ -38,7 +39,15 @@ class Binance:
 
     def crypto_to_tether(self, crypto_currency):
         print("\nBinance API")
+        #timeString = datetime.now()
         self.page = requests.get(f'{self.pair_url}?symbol={crypto_currency}USDT')
+        # dbpickle = pickledb.load('PriceLogs.db', False)
+        # #dbpickle.set('Binance Price', self.page.json()['price'])
+        # dbpickle.lcreate('Binance Price')
+        # dbpickle.ladd('Binance Price' , self.page.json()['price'])
+        
+        # dbpickle.ladd('Binance Price', '20')
+        # dbpickle.dump()
 
         file1 = open("PriceLog.txt", "a")
         file1.writelines('\n' + self.page.json()['price'] + '\n')

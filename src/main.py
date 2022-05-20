@@ -1,5 +1,4 @@
 from binance.Binance import Binance
-from cryptocom.CryptoCom import CryptoCom
 from supersentiment.SuperSentiment import SuperSentiment
 from sentiment.Sentiment import Sentiment
 
@@ -18,4 +17,4 @@ if __name__ == "__main__":
 
     print(f"Buffer: {superSentiment.buffer}")
 
-    #superSentiment.myPlot()
+    superSentiment.myPlot()

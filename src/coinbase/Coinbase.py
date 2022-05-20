@@ -1,6 +1,7 @@
 import json
 import requests
 import datetime
+import pickledb
 class Coinbase:
     global btc_price, eth_price, ltc_price, file1
     def __init__(self):
@@ -54,6 +55,15 @@ class Coinbase:
     print(pricesBTC)
 
     #Write on PriceLog.txt
+
+    dbpickle = pickledb.load('PriceLogs.db', False)
+    #dbpickle.set('Binance Price', self.page.json()['price'])
+    dbpickle.lcreate('Coindesk Price')
+    dbpickle.ladd('Coindesk Price' , '0')
+    
+    #dbpickle.ladd('Coindesk Price', '20')
+    dbpickle.dump()
+
     priceLog = open("PriceLog.txt", "a")
     priceLog.writelines("BTC prices on Coindesk: \n")
     priceLog.writelines(pricesBTC)

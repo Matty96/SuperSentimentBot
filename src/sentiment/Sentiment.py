@@ -43,8 +43,7 @@ class Sentiment():
 
       #Create a function to clean the tweets
       def cleanTwt(twt):
-        twt = re.sub('#bitcoin', 'lisk', twt) #Removes the '#' from bitcoin
-        twt = re.sub('#bitcoin', 'Lisk', twt) #Removes the '#' from Bitcoin
+        twt = re.sub('#bitcoin', 'bitcoin', twt) #Removes the '#' from Bitcoin
         twt = re.sub('#[A-Za-z0-9]+', '', twt) #Removes any strings with a '#'
         twt = re.sub('\\n', '', twt) #Removing the '\n' string
         twt = re.sub('https?:\/\/\S+', '', twt) #Removes any hyperlinks

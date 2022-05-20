@@ -5,4 +5,236 @@ BTC: {'EUR': 36789.39, 'GBP': 30939.05, 'USD': 38716.04, 'CNY': 269599.91}
 
 38719.56000000
 
-BTC prices on Coinbase: 38915.50
+BTC prices on Coinbase: 38915.50BTC prices on Coindesk: 
+Bitcoin: EUR: 28,898.9158, GBP: 24,553.7354, USD: 30,045.2940, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28484.33, 'GBP': 24123.22, 'USD': 30119.07, 'CNY': 204000.45}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 28,981.0942, GBP: 24,623.5576, USD: 30,130.7323, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28477.92, 'GBP': 24116.45, 'USD': 30142.58, 'CNY': 204000.45}
+
+30141.78000000
+BTC prices on Coindesk: 
+Bitcoin: EUR: 28,949.6510, GBP: 24,596.8421, USD: 30,098.0418, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28444.51, 'GBP': 24089.35, 'USD': 30100.83, 'CNY': 204000.45}
+
+30113.42000000
+BTC prices on Coindesk: 
+Bitcoin: EUR: 28,949.6510, GBP: 24,596.8421, USD: 30,098.0418, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28453.87, 'GBP': 24086.69, 'USD': 30103.01, 'CNY': 204000.45}
+
+30128.30000000
+
+BTC prices on Coinbase: 30261.21BTC prices on Coindesk: 
+Bitcoin: EUR: 29,212.6360, GBP: 24,820.2852, USD: 30,371.4590, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28649.31, 'GBP': 24279.35, 'USD': 30350.11, 'CNY': 205764.5}
+
+30373.56000000
+
+BTC prices on Coinbase: 30505.15BTC prices on Coindesk: 
+Bitcoin: EUR: 29,186.8163, GBP: 24,798.3477, USD: 30,344.6151, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28637.35, 'GBP': 24254.71, 'USD': 30320.77, 'CNY': 205764.5}
+
+30352.23000000
+
+BTC prices on Coinbase: 30475.55BTC prices on Coindesk: 
+Bitcoin: EUR: 29,138.0202, GBP: 24,756.8885, USD: 30,293.8833, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28610.39, 'GBP': 24215.61, 'USD': 30278.32, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,130.2887, GBP: 24,750.3195, USD: 30,285.8451, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28616.91, 'GBP': 24220.24, 'USD': 30274.2, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,130.2887, GBP: 24,750.3195, USD: 30,285.8451, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28625.11, 'GBP': 24224.23, 'USD': 30287.92, 'CNY': 205764.5}
+
+30330.96000000
+
+BTC prices on Coinbase: 30446.06BTC prices on Coindesk: 
+Bitcoin: EUR: 29,142.7812, GBP: 24,760.9337, USD: 30,298.8332, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28628.38, 'GBP': 24228.25, 'USD': 30296.16, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,137.9762, GBP: 24,756.8511, USD: 30,293.8375, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28680.36, 'GBP': 24264.51, 'USD': 30355.75, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,184.2243, GBP: 24,796.1455, USD: 30,341.9203, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28652.39, 'GBP': 24266.4, 'USD': 30311.18, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,163.9402, GBP: 24,778.9112, USD: 30,320.8315, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28727.97, 'GBP': 24296.34, 'USD': 30382.29, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,227.7766, GBP: 24,833.1493, USD: 30,387.2002, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28728.79, 'GBP': 24311.13, 'USD': 30407.11, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,204.2000, GBP: 24,813.1176, USD: 30,362.6884, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28702.83, 'GBP': 24297.09, 'USD': 30382.55, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,118.3817, GBP: 24,740.2028, USD: 30,273.4658, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28581.72, 'GBP': 24203.23, 'USD': 30248, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,089.5401, GBP: 24,715.6978, USD: 30,243.4801, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28542.05, 'GBP': 24186.65, 'USD': 30205.65, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,089.5401, GBP: 24,715.6978, USD: 30,243.4801, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28538.98, 'GBP': 24179.72, 'USD': 30201.1, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,059.2077, GBP: 24,689.9261, USD: 30,211.9445, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28531.8, 'GBP': 24169.81, 'USD': 30196.8, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,059.2077, GBP: 24,689.9261, USD: 30,211.9445, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28538.69, 'GBP': 24170.22, 'USD': 30203.73, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,059.2077, GBP: 24,689.9261, USD: 30,211.9445, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28523.87, 'GBP': 24163.32, 'USD': 30194.27, 'CNY': 205764.5}
+
+30225.16000000
+
+BTC prices on Coinbase: 30334.86BTC prices on Coindesk: 
+Bitcoin: EUR: 29,042.4588, GBP: 24,675.6955, USD: 30,194.5312, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28527.28, 'GBP': 24165.95, 'USD': 30200.83, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,096.4664, GBP: 24,721.5827, USD: 30,250.6812, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28581.78, 'GBP': 24197.01, 'USD': 30247.03, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,097.0880, GBP: 24,722.1108, USD: 30,251.3274, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28568.84, 'GBP': 24195.03, 'USD': 30233.55, 'CNY': 205764.5}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,079.7573, GBP: 24,707.3859, USD: 30,233.3092, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28569.34, 'GBP': 24201.39, 'USD': 30243.9, 'CNY': 205764.5}
+
+30275.05000000
+
+BTC prices on Coinbase: 30400.31BTC prices on Coindesk: 
+Bitcoin: EUR: 29,093.4358, GBP: 24,719.0077, USD: 30,247.5304, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28563.44, 'GBP': 24202.58, 'USD': 30241.27, 'CNY': 205764.5}
+
+30263.52000000
+
+BTC prices on Coinbase: 30391.40BTC prices on Coindesk: 
+Bitcoin: EUR: 29,093.4358, GBP: 24,719.0077, USD: 30,247.5304, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28558.25, 'GBP': 24201.49, 'USD': 30241.84, 'CNY': 205764.5}
+
+30269.40000000
+
+BTC prices on Coinbase: 30392.13BTC prices on Coindesk: 
+Bitcoin: EUR: 29,087.5100, GBP: 24,713.9729, USD: 30,241.3695, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28553.77, 'GBP': 24191.89, 'USD': 30241.01, 'CNY': 205764.5}
+
+30265.18000000
+
+BTC prices on Coinbase: 30383.56BTC prices on Coindesk: 
+Bitcoin: EUR: 29,087.5100, GBP: 24,713.9729, USD: 30,241.3695, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28552.52, 'GBP': 24190.95, 'USD': 30235.64, 'CNY': 211099.62}
+
+30267.99000000
+
+BTC prices on Coinbase: 30390.04BTC prices on Coindesk: 
+Bitcoin: EUR: 29,053.2743, GBP: 24,684.8848, USD: 30,205.7757, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28519.1, 'GBP': 24160.35, 'USD': 30197.27, 'CNY': 211099.62}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,041.4728, GBP: 24,674.8578, USD: 30,193.5060, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28514.35, 'GBP': 24153.85, 'USD': 30196.94, 'CNY': 211099.62}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 29,041.4728, GBP: 24,674.8578, USD: 30,193.5060, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28499.91, 'GBP': 24154.76, 'USD': 30169, 'CNY': 211099.62}
+
+30192.81000000
+
+BTC prices on Coinbase: 30313.44BTC prices on Coindesk: 
+Bitcoin: EUR: 29,023.1645, GBP: 24,659.3022, USD: 30,174.4714, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28489.47, 'GBP': 24140.51, 'USD': 30158.71, 'CNY': 211099.62}
+
+30188.20000000
+
+BTC prices on Coinbase: 30305.48BTC prices on Coindesk: 
+Bitcoin: EUR: 29,023.1645, GBP: 24,659.3022, USD: 30,174.4714, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28485.76, 'GBP': 24122.14, 'USD': 30145.41, 'CNY': 211099.62}
+
+30185.92000000
+
+BTC prices on Coinbase: 30283.94BTC prices on Coindesk: 
+Bitcoin: EUR: 29,000.2828, GBP: 24,639.8610, USD: 30,150.6821, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28466.56, 'GBP': 24120.74, 'USD': 30130.12, 'CNY': 211099.62}
+
+30160.30000000
+
+ETH prices on Coinbase: 2021.08BTC prices on Coindesk: 
+Bitcoin: EUR: 28,981.6087, GBP: 24,623.9947, USD: 30,131.2672, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28447.09, 'GBP': 24099.62, 'USD': 30119.68, 'CNY': 211099.62}
+BTC prices on Coindesk: 
+Bitcoin: EUR: 28,974.7687, GBP: 24,618.1832, USD: 30,124.1559, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28441.3, 'GBP': 24107.22, 'USD': 30115.36, 'CNY': 211099.62}
+
+30146.70000000
+
+BTC prices on Coinbase: 30264.22BTC prices on Coindesk: 
+Bitcoin: EUR: 28,976.2349, GBP: 24,619.4289, USD: 30,125.6802, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28471.64, 'GBP': 24131.34, 'USD': 30128.92, 'CNY': 211099.62}
+
+30166.72000000
+
+BTC prices on Coinbase: 30271.33BTC prices on Coindesk: 
+Bitcoin: EUR: 28,987.7795, GBP: 24,629.2377, USD: 30,137.6828, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28440.88, 'GBP': 24107.25, 'USD': 30097.3, 'CNY': 211099.62}
+
+30126.89000000
+
+BTC prices on Coinbase: 30250.97BTC prices on Coindesk: 
+Bitcoin: EUR: 28,948.0002, GBP: 24,595.4395, USD: 30,096.3255, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28417.29, 'GBP': 24092.92, 'USD': 30094.71, 'CNY': 211099.62}
+
+30130.18000000
+
+BTC prices on Coinbase: 30241.38BTC prices on Coindesk: 
+Bitcoin: EUR: 28,997.6831, GBP: 24,637.6522, USD: 30,147.9792, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28478.1, 'GBP': 24191.79, 'USD': 30126.01, 'CNY': 216000.45}
+
+30161.25000000
+
+BTC prices on Coinbase: 30262.01BTC prices on Coindesk: 
+Bitcoin: EUR: 28,982.9306, GBP: 24,625.1178, USD: 30,132.6415, 
+BTC prices on Gemini: 
+BTC: {'EUR': 28470.52, 'GBP': 24177.88, 'USD': 30111.31, 'CNY': 216000.45}
+
+30147.04000000
+
+BTC prices on Coinbase: 30243.03
