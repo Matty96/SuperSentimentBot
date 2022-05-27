@@ -61,8 +61,8 @@ class SuperSentiment():
         binancePrice = self.binance.crypto_to_tether(symbol)
         self.buffer.append(binancePrice)
 
-    def getPriceFromCoinbase(self):
-        coinbasePrice = self.coinbase.get_exchange()
+    def getPriceFromCoinbase(self, symbol):
+        coinbasePrice = self.coinbase.get_exchange(symbol)
         self.buffer.append(coinbasePrice)
 
     

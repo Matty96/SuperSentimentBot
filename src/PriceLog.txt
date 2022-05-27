@@ -124,3 +124,56 @@ BTC prices on Coinbase: 29390.40
 1812.84000000
 
 BTC prices on Coinbase: 29357.30
+29227.43000000
+
+1811.65000000
+
+BTC prices on Coinbase: 29349.89
+29291.43000000
+
+1810.99000000
+
+29301.43000000
+
+1810.87000000
+
+29367.79000000
+
+1820.39000000
+
+BTC prices on Coinbase: 29490.34
+29301.44000000
+
+1813.02000000
+
+BTC prices on Coinbase: 29447.50
+29293.43000000
+
+1812.26000000
+
+BTC prices on Coinbase: 29419.62
+ETH prices on Coinbase: 1820.64
+29312.91000000
+
+1813.29000000
+
+BTC prices on Coinbase: 29408.30
+ETH prices on Coinbase: 1819.34
+29302.42000000
+
+1813.08000000
+
+BTC prices on Coinbase: 29416.15
+ETH prices on Coinbase: 1821.62
+29323.42000000
+
+1815.87000000
+
+BTC prices on Coinbase: 29429.11
+ETH prices on Coinbase: 1821.85
+29334.54000000
+
+1815.43000000
+
+BTC prices on Coinbase: 29455.18
+ETH prices on Coinbase: 1824.53
