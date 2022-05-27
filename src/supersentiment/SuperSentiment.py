@@ -5,15 +5,16 @@ from sentiment.Sentiment import Sentiment
 import matplotlib.pyplot as plt
 import numpy as np
 
+
 class SuperSentiment():
     """
     """
+
     def __init__(self):
         self.binance = Binance()
         self.coinbase = Coinbase()
         self.gemini = Gemini()
         self.sentiment = Sentiment()
-        self.buffer = []
 
         self.N = 5
         self.BTC = (1, 35, 30, 35, -27)
@@ -23,9 +24,12 @@ class SuperSentiment():
         self.ind = np.arange(self.N)    
         self.width = 0.35   
 
-
     def myPlot(self):
         fig, ax = plt.subplots()
+
+        p1 = ax.bar(self.ind, self.menMeans, self.width, yerr=self.menStd, label='Men')
+        p2 = ax.bar(self.ind, self.womenMeans, self.width,
+                    bottom=self.menMeans, yerr=self.womenStd, label='Women')
 
         p2 = ax.bar(self.ind, self.ETH, self.width, yerr=self.menStd, label='ETH')
         p1 = ax.bar(self.ind, self.BTC, self.width, bottom=self.ETH, yerr=self.BTC, label='BTC')
@@ -36,28 +40,35 @@ class SuperSentiment():
         ax.set_xticks(self.ind, labels=['G1', 'G2', 'G3', 'G4', 'G5'])
         ax.legend()
 
-        # Label with label_type 'center' instead of the default 'edge'
-        ax.bar_label(p1, label_type='center')
-        ax.bar_label(p2, label_type='center')
-        ax.bar_label(p2)
 
-        plt.show()
+    #     plt.show()
 
     def checkSentiment(self):
         # Look on tweets
         sentiment = self.sentiment.check()
-        print("Machine Learning function -> Return sentiment")
+        print(f"Machine Learning function -> Return sentiment: {sentiment}")
         return sentiment
 
-    def check(self, exchage1:float, exchange2:float):
-        if exchage1 - exchange2 >= 1:
-            sentiment = self.checkSentiment()
-            if sentiment == True:
-                print("Stay")
-            else:
-                print("Sell")
-        else:
-            print("You should move money from wallets")
+    def check(self, exchage1: float, exchange2: float):
+        # TODO: Define where is better to buy/sell crypto.
+
+        buy = "Exchange1"
+        sell = "Exchange2"
+
+        print(f"{exchage1} - {exchange2} >= 0")
+
+        if (exchage1 - exchange2 >= 0):
+            buy = "Exchange2"
+            sell = "Exchange1"
+
+        sentiment = self.checkSentiment()
+
+        if sentiment == "Stay":
+            print("Stay")
+        elif sentiment == "Buy":
+            print(f"Buy on {buy} Sell on {sell}")
+        elif sentiment == "Sell":
+            print("Sell on {sell} and buy {buy}")
 
     def getPriceFromBinance(self, symbol):
         binancePrice = self.binance.crypto_to_tether(symbol)
@@ -72,3 +83,4 @@ class SuperSentiment():
         self.buffer.append(geminiPrice)
 
     
+

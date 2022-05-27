@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 BTC price on Binance: 29222.44000000
 ETH price on Binance: 1802.39000000
 BTC price on Coinbase: 29339.94
@@ -58,3 +59,15 @@ BTC price on Binance: 28792.58000000
 ETH price on Binance: 1767.21000000
 BTC price on Coinbase: 28908.35
 ETH price on Coinbase: 1774.87
+=======
+BTC prices on Coindesk: 
+Bitcoin: EUR: 36,722.8259, GBP: 30,762.7395, USD: 38,679.5061, 
+BTC prices on Gemini: 
+BTC: {'EUR': 36789.39, 'GBP': 30939.05, 'USD': 38716.04, 'CNY': 269599.91}
+
+38719.56000000
+
+BTC prices on Coinbase: 38915.50BTC prices on Coindesk: 
+Bitcoin: EUR: 36,591.8188, GBP: 30,695.5555, USD: 38,413.1394, BTC prices on Coindesk: 
+Bitcoin: EUR: 36,560.5215, GBP: 30,669.3014, USD: 38,380.2843, 
+>>>>>>> 76623686ce1598ae1916d529f29ad686e73d60ae
