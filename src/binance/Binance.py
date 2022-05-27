@@ -30,6 +30,9 @@ class Binance:
         # dbpickle.dump()
         print(f"{crypto_currency}: {self.page.json()['price']}" )
         file1 = open("PriceLog.txt", "a")
-        file1.writelines('\n' + self.page.json()['price'] + '\n')
+        file1.writelines('\n' + crypto_currency.upper() + " price on Binance: ")
+        file1.writelines(self.page.json()['price'])
+
+        #priceLog.writelines("\n" + symbol.upper() + " prices on Coinbase: ")
 
         return self.page.json()['price']

@@ -26,7 +26,7 @@ class Coinbase:
 
         #Write on PriceLog.txt
         priceLog = open("PriceLog.txt", "a")
-        priceLog.writelines("\n" + symbol.upper() + " prices on Coinbase: ")
+        priceLog.writelines("\n" + symbol.upper() + " price on Coinbase: ")
         priceLog.writelines(btc_price)
         priceLog.close()
 

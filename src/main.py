@@ -2,6 +2,8 @@ from binance.Binance import Binance
 from coinbase.Coinbase import Coinbase
 from supersentiment.SuperSentiment import SuperSentiment
 from sentiment.Sentiment import Sentiment
+import json, requests
+import pandas as pd
 
 if __name__ == "__main__":
     superSentiment = SuperSentiment()
@@ -14,7 +16,15 @@ if __name__ == "__main__":
     superSentiment.getPriceFromCoinbase('ETH')
     #superSentiment.checkSentiment()
     #print(f"Binance \nBTC and ETH: {superSentiment.buffer} \n")
-
+    print("\nGemini")
+    base_url = "https://api.gemini.com/v1"
+    # response = requests.get(base_url + "/pricefeed")
+    # symbols = pd.DataFrame(response.json())
+    # symbols.tail()
+    response = requests.get(base_url + "/pricefeed/BTCUSD")
+    price = response.json()#['price']
+    print(price)
+    
     # superSentiment.check(exchange1, exchange2)
     # superSentiment.myPlot()
     print("")

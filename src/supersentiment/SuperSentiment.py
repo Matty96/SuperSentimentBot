@@ -1,5 +1,6 @@
 from binance.Binance import Binance
 from coinbase.Coinbase import Coinbase
+from gemini.Gemini import Gemini
 from sentiment.Sentiment import Sentiment
 import matplotlib.pyplot as plt
 import numpy as np
@@ -10,6 +11,7 @@ class SuperSentiment():
     def __init__(self):
         self.binance = Binance()
         self.coinbase = Coinbase()
+        self.gemini = Gemini()
         self.sentiment = Sentiment()
         self.buffer = []
 
@@ -64,5 +66,9 @@ class SuperSentiment():
     def getPriceFromCoinbase(self, symbol):
         coinbasePrice = self.coinbase.get_exchange(symbol)
         self.buffer.append(coinbasePrice)
+
+    def getPriceFromGemini(self, symbol):
+        geminiPrice = self.gemini.getvalue(symbol)
+        self.buffer.append(geminiPrice)
 
     
