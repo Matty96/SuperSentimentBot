@@ -22,7 +22,8 @@ class SuperSentiment():
         self.menStd = (2, 3, 4, 1, 2)
         self.womenStd = (3, 5, 2, 3, 3)
         self.ind = np.arange(self.N)    
-        self.width = 0.35   
+        self.width = 0.35  
+        self.buffer = []
 
     def myPlot(self):
         fig, ax = plt.subplots()
@@ -41,7 +42,7 @@ class SuperSentiment():
         ax.legend()
 
 
-    #     plt.show()
+    # plt.show()
 
     def checkSentiment(self):
         # Look on tweets
@@ -78,9 +79,9 @@ class SuperSentiment():
         coinbasePrice = self.coinbase.get_exchange(symbol)
         self.buffer.append(coinbasePrice)
 
-    def getPriceFromGemini(self, symbol):
-        geminiPrice = self.gemini.getvalue(symbol)
-        self.buffer.append(geminiPrice)
+    # def getPriceFromGemini(self, symbol):
+    #     geminiPrice = self.gemini.getvalue(symbol)
+    #     self.buffer.append(geminiPrice)
 
     
 

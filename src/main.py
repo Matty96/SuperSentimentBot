@@ -4,10 +4,17 @@ from supersentiment.SuperSentiment import SuperSentiment
 from sentiment.Sentiment import Sentiment
 import json, requests
 import pandas as pd
+import pickledb
+#from . import Datastore
 
 if __name__ == "__main__":
+    #database = Datastore()
     superSentiment = SuperSentiment()
     sentiment = Sentiment()
+
+    # database.create_price_db()
+    # dbpickle = pickledb.load('PriceLogs.db', False)
+    # dbpickle.lcreate('Binance Price')
     print("Binance")
     exchange1 = superSentiment.getPriceFromBinance('BTC')
     superSentiment.getPriceFromBinance('ETH')

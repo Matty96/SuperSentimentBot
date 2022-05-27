@@ -23,7 +23,7 @@ class Binance:
         self.page = requests.get(f'{self.pair_url}?symbol={crypto_currency}USDT')
         # dbpickle = pickledb.load('PriceLogs.db', False)
         # #dbpickle.set('Binance Price', self.page.json()['price'])
-        # dbpickle.lcreate('Binance Price')
+        # dbpickle.load('Binance Price')
         # dbpickle.ladd('Binance Price' , self.page.json()['price'])
         
         # dbpickle.ladd('Binance Price', '20')

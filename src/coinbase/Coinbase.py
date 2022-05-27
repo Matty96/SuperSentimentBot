@@ -29,20 +29,3 @@ class Coinbase:
         priceLog.writelines("\n" + symbol.upper() + " price on Coinbase: ")
         priceLog.writelines(btc_price)
         priceLog.close()
-
-    #GEMINI
-    # print("\nGemini API")
-    # symbolForGemini = "btc" #input("Enter a crypto symbol for Gemini: ")
-    # #print(f'You entered {symbolForGemini.upper()}')
-
-    # #Get response
-    # response = requests.get("https://min-api.cryptocompare.com/data/price?fsym=" + symbolForGemini.upper() + "&tsyms=EUR,GBP,USD,JPN,CNY")
-    # print(symbolForGemini.upper() + ' ' + str(response.json()))
-
-    # #Write on PriceLog.txt
-    # priceLog = open("PriceLog.txt", "a")
-    # priceLog.writelines("\n" + symbolForGemini.upper() + " prices on Gemini: \n")
-    # priceLog.writelines(symbolForGemini.upper() + ': ' + str(response.json()) + '\n')
-    # priceLog.close()
-
-
