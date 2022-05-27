@@ -5,7 +5,11 @@ from sentiment.Sentiment import Sentiment
 import json, requests
 import pandas as pd
 
+from .datastore.Datastore import Datastore
+
 if __name__ == "__main__":
+
+    datastore = Datastore()
     superSentiment = SuperSentiment()
     sentiment = Sentiment()
     print("Binance")
