@@ -38,7 +38,6 @@ class Binance:
     #                f' a full list of pairings.'
 
     def crypto_to_tether(self, crypto_currency):
-        print("\nBinance API")
         #timeString = datetime.now()
         self.page = requests.get(f'{self.pair_url}?symbol={crypto_currency}USDT')
         # dbpickle = pickledb.load('PriceLogs.db', False)
@@ -48,7 +47,7 @@ class Binance:
         
         # dbpickle.ladd('Binance Price', '20')
         # dbpickle.dump()
-
+        print(f"{crypto_currency}: {self.page.json()['price']}" )
         file1 = open("PriceLog.txt", "a")
         file1.writelines('\n' + self.page.json()['price'] + '\n')
 

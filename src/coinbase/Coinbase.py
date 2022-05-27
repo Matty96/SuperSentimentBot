@@ -15,87 +15,79 @@ class Coinbase:
     #COINBASE
     def get_exchange(self):
         print("Coinbase")
-        symbolForCoinbase = input("Enter a crypto symbol for Coinbase: ")
-        print(f'You entered {symbolForCoinbase.upper()}')
+        coinbaseFirstSymbol = "btc" #input("Enter a crypto symbol for Coinbase: ")
+        #print(f'You entered {symbolForCoinbase.upper()}')
+        coinbaseSecondSymbol = "eth"
 
         #Get response
         #if self.headers['CB-VERSION'] != datetime.datetime.now().strftime("%Y-%m-%d"):
-        btc_r = self.session.get('https://api.coinbase.com/v2/prices/' + symbolForCoinbase + '-USD/buy', headers=self.headers)
+        btc_r = self.session.get('https://api.coinbase.com/v2/prices/' + coinbaseFirstSymbol + '-USD/buy', headers=self.headers)
         btc_price = btc_r.json()["data"]["amount"]
+        btc_r = self.session.get('https://api.coinbase.com/v2/prices/' + coinbaseSecondSymbol + '-USD/buy', headers=self.headers)
+        eth_price = btc_r.json()["data"]["amount"]
 
         #Print results
-        print(btc_price)
+        print("BTC: " + btc_price)
+        print("ETH: " + eth_price + "\n")
 
         #Write on PriceLog.txt
         priceLog = open("PriceLog.txt", "a")
-        priceLog.writelines("\n" + symbolForCoinbase.upper() + " prices on Coinbase: ")
+        priceLog.writelines("\n" + coinbaseFirstSymbol.upper() + " prices on Coinbase: ")
         priceLog.writelines(btc_price)
         priceLog.close()
 
 
 
-    #COINDESK
-    def jprint(obj):
-        text = json.dumps(obj, sort_keys=True, indent=4)
-        print(text)
+    # #COINDESK
+    # def jprint(obj):
+    #     text = json.dumps(obj, sort_keys=True, indent=4)
+    #     print(text)
 
-    print("\nCoindesk API")
-    pricesBTC=['Bitcoin: ']
+    # print("\nCoindesk API")
+    # pricesBTC=['Bitcoin: ']
 
-    #Get response
-    response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-    price_data=response.json()['bpi']
-    for c in price_data:
-        amount = price_data[c]['rate']
-        curr_code = price_data[c]['code']
-        price = str(curr_code) + ": " + str(amount) + ", " 
-        pricesBTC.insert(1, price)
+    # #Get response
+    # response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+    # price_data=response.json()['bpi']
+    # for c in price_data:
+    #     amount = price_data[c]['rate']
+    #     curr_code = price_data[c]['code']
+    #     price = str(curr_code) + ": " + str(amount) + ", " 
+    #     pricesBTC.insert(1, price)
     
-    #Print results
-    print(pricesBTC)
+    # #Print results
+    # print(pricesBTC)
 
-    #Write on PriceLog.txt
+    # #Write on PriceLog.txt
 
-    dbpickle = pickledb.load('PriceLogs.db', False)
-    #dbpickle.set('Binance Price', self.page.json()['price'])
-    dbpickle.lcreate('Coindesk Price')
-    dbpickle.ladd('Coindesk Price' , '0')
+    # dbpickle = pickledb.load('PriceLogs.db', False)
+    # #dbpickle.set('Binance Price', self.page.json()['price'])
+    # dbpickle.lcreate('Coindesk Price')
+    # dbpickle.ladd('Coindesk Price' , '0')
     
-    #dbpickle.ladd('Coindesk Price', '20')
-    dbpickle.dump()
+    # #dbpickle.ladd('Coindesk Price', '20')
+    # dbpickle.dump()
 
-    priceLog = open("PriceLog.txt", "a")
-    priceLog.writelines("BTC prices on Coindesk: \n")
-    priceLog.writelines(pricesBTC)
-    priceLog.close()
+    # priceLog = open("PriceLog.txt", "a")
+    # priceLog.writelines("BTC prices on Coindesk: \n")
+    # priceLog.writelines(pricesBTC)
+    # priceLog.close()
     
 
 
     #GEMINI
-    print("\nGemini API")
-    symbolForGemini = input("Enter a crypto symbol for Gemini: ")
-    print(f'You entered {symbolForGemini.upper()}')
+    # print("\nGemini API")
+    # symbolForGemini = "btc" #input("Enter a crypto symbol for Gemini: ")
+    # #print(f'You entered {symbolForGemini.upper()}')
 
-    #Get response
-    response = requests.get("https://min-api.cryptocompare.com/data/price?fsym=" + symbolForGemini.upper() + "&tsyms=EUR,GBP,USD,JPN,CNY")
-    print(symbolForGemini.upper() + ' ' + str(response.json()))
+    # #Get response
+    # response = requests.get("https://min-api.cryptocompare.com/data/price?fsym=" + symbolForGemini.upper() + "&tsyms=EUR,GBP,USD,JPN,CNY")
+    # print(symbolForGemini.upper() + ' ' + str(response.json()))
 
-    #Write on PriceLog.txt
-    priceLog = open("PriceLog.txt", "a")
-    priceLog.writelines("\n" + symbolForGemini.upper() + " prices on Gemini: \n")
-    priceLog.writelines(symbolForGemini.upper() + ': ' + str(response.json()) + '\n')
-    priceLog.close()
+    # #Write on PriceLog.txt
+    # priceLog = open("PriceLog.txt", "a")
+    # priceLog.writelines("\n" + symbolForGemini.upper() + " prices on Gemini: \n")
+    # priceLog.writelines(symbolForGemini.upper() + ': ' + str(response.json()) + '\n')
+    # priceLog.close()
 
-    
-    # base_url = "https://api.gemini.com/v1"
-    # response_usd = requests.get(base_url + "/pubticker/" + symbolForGemini + "usd")
-    # usd_data = response_usd.json()
-
-    # ETH
-    # response = requests.get("https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=EUR,GBP,USD")
-    # print("Ethereum " + str(response.json()))
-
-    # base_url = "https://api.gemini.com/v1"
-    # response_usd = requests.get(base_url + "/pubticker/ethusd")
-    # usd_data = response_usd.json()
 

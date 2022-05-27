@@ -5,16 +5,15 @@ from sentiment.Sentiment import Sentiment
 if __name__ == "__main__":
     superSentiment = SuperSentiment()
     sentiment = Sentiment()
-    
-    #superSentiment.getPriceFromBinance('ETH')
+    print("Binance")
     superSentiment.getPriceFromBinance('BTC')
+    superSentiment.getPriceFromBinance('ETH')
+    print("")
 
     #superSentiment.check(Binance, CryptoCom)
 
     superSentiment.getPriceFromCoinbase()
-
-    "spot/ticker:BTC_USDT"
-
-    print(f"Buffer: {superSentiment.buffer}")
+    superSentiment.checkSentiment()
+    #print(f"Binance \nBTC and ETH: {superSentiment.buffer} \n")
 
     superSentiment.myPlot()

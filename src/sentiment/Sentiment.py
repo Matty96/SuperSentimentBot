@@ -15,7 +15,7 @@ class Sentiment():
     Sentiment on crypto based on tweets
     """
     def __init__(self):
-        print("Sentiment Analyzer")
+        print("")
 
     def check(self):
       CONSUMER_KEY = os.environ.get("CONSUMER_KEY")
