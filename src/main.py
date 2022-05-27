@@ -7,8 +7,10 @@ import pandas as pd
 import pickledb
 #from . import Datastore
 
+from .datastore.Datastore import Datastore
+
 if __name__ == "__main__":
-    #database = Datastore()
+    datastore = Datastore()
     superSentiment = SuperSentiment()
     sentiment = Sentiment()
 
