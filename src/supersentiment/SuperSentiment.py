@@ -5,83 +5,104 @@ from sentiment.Sentiment import Sentiment
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 class SuperSentiment():
     """
+    Algorithm to determine the best action to take
     """
-
     def __init__(self):
         self.binance = Binance()
         self.coinbase = Coinbase()
         self.gemini = Gemini()
         self.sentiment = Sentiment()
-
-        self.N = 5
-        self.BTC = (1, 35, 30, 35, -27)
-        self.ETH = (25, 32, 34, 20, -25)
-        self.menStd = (2, 3, 4, 1, 2)
-        self.womenStd = (3, 5, 2, 3, 3)
-        self.ind = np.arange(self.N)    
-        self.width = 0.35  
-        self.buffer = []
-
-    def myPlot(self):
-        fig, ax = plt.subplots()
-
-        p1 = ax.bar(self.ind, self.menMeans, self.width, yerr=self.menStd, label='Men')
-        p2 = ax.bar(self.ind, self.womenMeans, self.width,
-                    bottom=self.menMeans, yerr=self.womenStd, label='Women')
-
-        p2 = ax.bar(self.ind, self.ETH, self.width, yerr=self.menStd, label='ETH')
-        p1 = ax.bar(self.ind, self.BTC, self.width, bottom=self.ETH, yerr=self.BTC, label='BTC')
-
-        ax.axhline(0, color='grey', linewidth=0.8)
-        ax.set_ylabel('Scores')
-        ax.set_title('BTC/ETH price comparison')
-        ax.set_xticks(self.ind, labels=['G1', 'G2', 'G3', 'G4', 'G5'])
-        ax.legend()
-
-
-    # plt.show()
+        self.buffer = [0]
+        self.symbol = ""
 
     def checkSentiment(self):
         # Look on tweets
         sentiment = self.sentiment.check()
-        print(f"Machine Learning function -> Return sentiment: {sentiment}")
+        print(f"\nThe sentiment returned from the machine learning function is: {sentiment}\n")
         return sentiment
 
-    def check(self, exchage1: float, exchange2: float):
-        # TODO: Define where is better to buy/sell crypto.
+    def check(self, exchange1: float, exchange2: float):
+        buyFrom = "Exchange1"
+        sellFrom = "Exchange2"
+        self.symbol = input("Choose the crypto on which you want to conduct the analysis: ")
+        exchangeName1 = input("Enter the name of the first exchange to use: ")
+        exchangeName2 = input("Enter the name of the second exchange to use: ")
 
-        buy = "Exchange1"
-        sell = "Exchange2"
+        priceLog = open("PriceLog.txt", "r")
+        Lines = priceLog.readlines()
+        if(exchangeName1 == "Binance"):
+            for line in Lines:
+                if line.startswith(f'{self.symbol} price on Binance: '):
+                    priceFromBinance = line[22:]
+                    exchange1 = float(priceFromBinance)
+        elif(exchangeName1 == "Coinbase"):
+            for line in Lines:
+                if line.startswith(f'{self.symbol} price on Coinbase: '):
+                    priceFromCoinbase = line[23:]
+                    exchange1 = float(priceFromCoinbase)
+        elif(exchangeName1 == "Gemini"):
+            for line in Lines:
+                if line.startswith(f'{self.symbol} price on Gemini: '):
+                    priceFromGemini = line[21:]
+                    exchange1 = float(priceFromGemini)
+        
+        if(exchangeName2 == "Binance"):
+            for line in Lines:
+                if line.startswith(f'{self.symbol} price on Binance: '):
+                    priceFromBinance = line[22:]
+                    exchange2 = float(priceFromBinance)
+        elif(exchangeName2 == "Coinbase"):
+            for line in Lines:
+                if line.startswith(f'{self.symbol} price on Coinbase: '):
+                    priceFromCoinbase = line[23:]
+                    exchange2 = float(priceFromCoinbase)
+        elif(exchangeName2 == "Gemini"):
+            for line in Lines:
+                if line.startswith(f'{self.symbol} price on Gemini: '):
+                    priceFromGemini = line[21:]
+                    exchange2 = float(priceFromGemini)
+        
+            # if line.startswith(f'{self.symbol} price on Gemini: '):
+            #     priceFromGemini = line[21:]
+            #     exchange3 = float(priceFromGemini)
+        priceLog.close()
+        print("\nLast prices retrieved from PriceLog.txt")
+        print(f"{self.symbol} price on {exchangeName1}, set as Exchange1: {exchange1}$")
+        print(f"{self.symbol} price on {exchangeName2}, set as Exchange2: {exchange2}$")
 
-        print(f"{exchage1} - {exchange2} >= 0")
-
-        if (exchage1 - exchange2 >= 0):
-            buy = "Exchange2"
-            sell = "Exchange1"
+        if (exchange1 - exchange2 >= 0):
+            buyFrom = "Exchange2"
+            sellFrom = "Exchange1"
+            # print(f"Buy on: {buyFrom}")
+            # print(f"Sell on: {sellFrom}\n")
+        elif (exchange2 - exchange1 >= 0):
+            buyFrom = "Exchange1"
+            sellFrom = "Exchange2"
+            # print(f"Buy on: {buyFrom}")
+            # print(f"Sell on: {sellFrom}\n")
 
         sentiment = self.checkSentiment()
 
         if sentiment == "Stay":
-            print("Stay")
+            print(f"The suggested action to be taken is to Stay\n")
         elif sentiment == "Buy":
-            print(f"Buy on {buy} Sell on {sell}")
+            print(f"The suggested action to be taken is to Buy on {buyFrom} and Sell on {sellFrom}\n")
         elif sentiment == "Sell":
-            print("Sell on {sell} and buy {buy}")
-
+            print(f"The suggested action to be taken is to Sell on {sellFrom} and Buy on {buyFrom}\n")
+        
     def getPriceFromBinance(self, symbol):
-        binancePrice = self.binance.crypto_to_tether(symbol)
+        binancePrice = self.binance.get_price(symbol)
         self.buffer.append(binancePrice)
 
     def getPriceFromCoinbase(self, symbol):
-        coinbasePrice = self.coinbase.get_exchange(symbol)
+        coinbasePrice = self.coinbase.get_price(symbol)
         self.buffer.append(coinbasePrice)
 
-    # def getPriceFromGemini(self, symbol):
-    #     geminiPrice = self.gemini.getvalue(symbol)
-    #     self.buffer.append(geminiPrice)
+    def getPriceFromGemini(self, symbol):
+        geminiPrice = self.gemini.get_price(symbol)
+        self.buffer.append(geminiPrice)
 
     
 
